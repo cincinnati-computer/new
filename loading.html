@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html style="background:black;transition:background 1.6s ease-in" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="eHTML" manifest="main.appcache">
+	<!-- if scripts were disabled, then you wouldn't be seeing this page -->
+	<head id="eHEAD">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<title>Greater Cincinnati Computers</title>
+	</head>
+	<body id="eBODY" style="opacity:0;transition:opacity 1.6s ease-out">
+		<div id="loading" onselectstart="return false;" ondragstart="return false;">
+			<img id="logo" src="images/logo.svg" />
+			<div id="slogan">
+				Your <span style="color:red;font-weight:900">people friendly</span> computer company<br />
+				<font family="monospace" color="green">LOADING...</font>
+				<!--<div id="outerBar"><div id="ePROGRESS"></div></div>-->
+			</div>
+		</div>
+		<script type="text/javascript">//<!--<![CDATA[
+			(function(window, document){
+				"use-strict";
+				var HTML		 = document.getElementById('eHTML'),
+					BODY		 = document.getElementById('eBODY'),
+					myframe		 = document.getElementById('myFRAME'),
+					loadingFRAME = document.getElementById('loadingFRAME'),
+					appCache	 = window.applicationCache,
+					/*ePROGRESS	 = document.getElementById('ePROGRESS'),
+					totalItems	 = 50,
+					currentCount = 0,*/
+					startPageRendering = function(){
+						try{
+							window.localStorage.setItem('L','1')
+						}catch(e){}
+						window.location.assign( 'pages/index_page.html' );
+					},
+					startPageLoading = function(){
+						appCache.onprogress = function(evt){
+							ePROGRESS.style.width = evt.progress ?
+								(evt.progress/totalItems) + '%' :
+							++currentCount;
+						}
+					},
+					checkingCache = function(){
+					};
+
+				if (location.protocol !== 'file:'){
+					appCache.onupdateready = 
+						appCache.onnoupdate = appCache.oncached = appCache.onerror = startPageRendering;
+					switch (appCache.status){
+						case 0:
+						case 1:
+							if (document.readyState !== 'complete'){
+								setTimeout(checkingCache, 1);
+							} else {
+								startPageLoading();
+							}
+						case 1:
+							break;
+						default:
+							startPageLoading();
+					}
+				} else {
+					startPageRendering();
+				}
+				window.addEventListener('load',function(){
+					BODY.style.opacity	  = 1;
+					HTML.style.backgroundColor = 'rgba(196, 237, 250,.5)';
+					appCache.onupdateready = function(){appCache.swapCache()};
+				});
+			})(window, document);
+		//]]>--></script>
+		<style>
+			#eBODY{
+				background-image: -webkit-linear-gradient( -40deg, #1ff, #7ee 5%, #aee);
+				background-image: -o-linear-gradient( -40deg, #1ff, #7ee 5%, #aee );
+				background-image: linear-gradient( 150deg, #1ff, #7ee 5%, #aee );
+			}
+			/*#outerBar {
+				margin-top: .5em;
+				border-radius: 50%;
+				overflow: hidden;
+				width: 8vw;
+				height: 8vw;
+				transform: scaleX(6);
+				display: inline-block;
+			}
+			#ePROGRESS {
+				background: linear-gradient(130deg, darkgreen, green 50%, lightgreen) green;
+				height: 100%;
+				width: 100%;
+			}*/
+			#logo {
+				width: calc(95vh - calc(24em - 16vw));
+				max-width: 100vw;
+				max-height: 100vw;
+				top: 0; left: 0; right: 0;
+			}
+			#slogan {
+				font-size: 3em;
+				bottom: 0; left: 0; right: 0;
+				padding: 1em
+			}
+			#logo, #slogan {
+				margin: auto;
+				position: fixed;
+				text-align: center;
+			}
+		</style>
+		<!--<![endif]-->
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
