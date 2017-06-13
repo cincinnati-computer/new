@@ -1,9 +1,0 @@
-CACHE MANIFEST
-#v0
-
-CACHE:
-index.html
-index.appcache
-
-NETWORK:
-loading.html
