@@ -4,7 +4,6 @@ CACHE MANIFEST
 CACHE:
 images/logo.svg
 index.html
-index.appcache
 pages/index_page.html
 pages/directions.html
 pages/digital_clock.html
