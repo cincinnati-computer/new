@@ -79,11 +79,11 @@
 		
 		
 		/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		
+		*/
 		if (localStorageEnabled && !(thispagesfilename in theLocalStorage)){
 			theLocalStorage.setItem(thispagesfilename, touchPointerElement.innerHTML);
 		}
-		
+		/*
 		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 			
 
