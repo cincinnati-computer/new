@@ -106,7 +106,6 @@
 				var topweblinkbar = getElementById('topweblinkbar'),
 					mlinklist = getElementById('mlinklist'),
 					mlinktopbarchildren = (
-						eBODY.appendChild( topweblinkbar ),
 						topweblinkbar.innerHTML = mlinklist.innerHTML.replace(/<.?div.*?>/gm, ''),
 						topweblinkbar.children
 					),
