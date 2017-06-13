@@ -1,0 +1,83 @@
+.seagate {
+	color: #555;
+	background-color: rgba(255,255,255,.0625);
+	letter-spacing: 0.25em;
+	font-family: monospace;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+	text-decoration-line: none;
+	font-weight: bold;
+}
+.dell {
+	border: 0.25em solid #44f;
+	border-radius: 1em;
+	color: blue;
+	padding-left: 0.125em;
+	padding-right: 0.125em;
+	font-family: monospace;
+	font-weight: bold;
+	text-decoration-line: none;
+}
+.dellE {
+	padding-left: 0.125em;
+	display: inline-block;
+	transform: rotate(-45deg);
+}
+.HP {
+	border-radius: 1em;
+	background-color: #9bf;
+	font-weight: bold;
+	color: #ffffff;
+	letter-spacing: 0.03125em;
+	width: 1.5em;
+	text-align: center;
+	align-content: center;
+	display: inline-block;
+	text-decoration-line: none;
+}
+.toshiba {
+	color: red;
+	background-color: rgba(255,255,255,.0625);
+	font-family: monospace;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+	text-decoration-line: none;
+	font-weight: bold;
+}
+.cincinnatiBell {
+	color: rgb(123, 166, 180);
+	background-color: rgba(255,255,255,.125);
+	border-radius: 50%;
+	font-family: system-ui, Sans-Serif;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+	text-decoration-line: none;
+	font-weight: bold;
+}
+.infinity {
+	display: inline-block;
+	position: relative;
+	width: 2.5em;
+	height: 1em;
+}
+
+.infinity:before,
+.infinity:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0.875em;
+	height: 0.875em;
+	border: 0.125em solid green;
+	border-radius: 50px 50px 0 50px;
+	transform: rotate(-45deg);
+}
+
+.infinity:after {
+	left: auto;
+	right: 0;
+	border-radius: 50px 50px 50px 0;
+	transform: rotate(45deg);
+	border-color: blue;
+}
