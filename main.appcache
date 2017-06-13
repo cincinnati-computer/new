@@ -1,17 +1,20 @@
 CACHE MANIFEST
-#v1
+#v2
 
 CACHE:
+index.appcache
 images/logo.svg
 index.html
-pages/index_page.html
-pages/directions.html
+pages/contact.html
 pages/digital_clock.html
-pages/services.html
-pages/products.html
+pages/directions.html
 pages/diyblog.html
-pages/recovery.html
 pages/header&footer.html
+pages/index_page.html
+pages/products.html
+pages/recovery.html
+pages/services.html
+pages/socialmediamenu.html
 styles/default.css
 styles/companyIcons.css
 scripts/default.js
@@ -22,6 +25,7 @@ images/slide1.jpg
 images/slide2.jpg
 images/slide3.jpg
 images/logo_backup.jpg
+images/data_recovery.jpg
 images/DIY-1.jpg
 images/DIY-2.jpg
 images/DIY-3.jpg
@@ -30,7 +34,4 @@ images/DIY-5.jpg
 images/DIY-6.jpg
 images/DIY-7.jpg
 images/DIY-10.jpg
-
-NETWORK:
 loading.html
-*
