@@ -16,13 +16,12 @@
 			</div>
 		</div>
 		<script type="text/javascript">//<!--<![CDATA[
-			(function(window, document){debugger;
+			(function(window, document, appCache){
 				"use-strict";
 				var HTML		 = document.getElementById('eHTML'),
 					BODY		 = document.getElementById('eBODY'),
 					myframe		 = document.getElementById('myFRAME'),
 					loadingFRAME = document.getElementById('loadingFRAME'),
-					appCache	 = window.applicationCache,
 					/*ePROGRESS	 = document.getElementById('ePROGRESS'),
 					totalItems	 = 50,
 					currentCount = 0,*/
@@ -66,7 +65,7 @@
 					HTML.style.backgroundColor = 'rgba(196, 237, 250,.5)';
 					appCache.onupdateready = function(){appCache.swapCache()};
 				});
-			})(window, document);
+			})(window, document, applicationCache);
 		//]]>--></script>
 		<style>
 			#eBODY{
