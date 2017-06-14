@@ -2,6 +2,9 @@
 @import url(//fonts.googleapis.com/css?family=Oswald);
 @import url(//fonts.googleapis.com/css?family=Raleway:800);
 
+.mwebtopbarlink .notintopbar {
+	display: none
+}
 .innersidebox {
 	border: 1px solid;
 	border-radius: 1em;
