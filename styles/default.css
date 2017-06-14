@@ -415,17 +415,14 @@ h3, #rightcenter {
 	height: 0;
 	width: .25ex;
 }
-@media (min-width: 800px) {
+@media (min-width: 600px) {
 	::-webkit-scrollbar {
 		width: 1cm;
 	}
 	::-webkit-scrollbar-track{
 		border: 2px solid darkgrey;
 		border-radius: 1cm;
-		background-clip: padding-box;
-		box-shadow: 0 0 0cm 1cm darkgrey;
-		background-color: transparent;
-		z-index: -1;
+		box-shadow: 999vw 0 0 999vw darkgrey;
 	}
 	::-webkit-scrollbar-button {
 		width: 0px;
@@ -435,14 +432,13 @@ h3, #rightcenter {
 		border-left-width: 0px;
 		background-color: rgba(0,0,0,.2);
 		border-radius: 1cm;
-		min-width: 1.25cm;
-		width: 1.25cm;
+		width: 1cm;
 		-webkit-transition: background 2s ease-in-out;
 		transition: background 2s ease-in-out;
 	}
 	::-webkit-scrollbar-thumb:hover {
 		background-color: rgba(0,0,0,.7);
-		width: 1cm;
+		width: 1.25cm;
 		-webkit-transition: background 2s ease-in-out;
 		transition: background 2s ease-in-out;
 	}
