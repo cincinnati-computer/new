@@ -477,8 +477,8 @@ a:hover  {
 	width: 200%;
 	height: 200%;
 	transform: scale(.5);
-	marign-top: -50%;
-	marign-left: -50%;
+	margin-top: -50%;
+	margin-left: -50%;
 	margin-bottom: 0;
 	margin-right: 0;
 }
