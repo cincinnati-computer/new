@@ -458,6 +458,33 @@ a:hover  {
 	box-shadow: inset 9vw 9vw 9vw rgba(192, 192, 192, 0.3);
 	transition: box-shadow .3s linear;
 }
+#revolvermapsoutercontainer {
+	position: fixed;
+	width: calc(6vw + 5vh);
+	height: calc(6vw + 5vh);
+	left: calc(6vw + 7vh);
+	bottom: calc(1vh + .09vw);
+	overflow: hidden !important;
+}
+#revolvermapscontainer {
+	display: inline-block;
+	position: relative;
+	width: 50%;
+	overflow: hidden;
+}
+#revolvermapsdummy {
+    margin-top: 100%
+}
+#revolvermapselement {
+    position: absolute;
+    top: -12%; bottom: -12%;
+    left: 0; right: -24%;
+}
+#revolvermapsiframe {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
 #footerdirections {
 	text-align: center;
 	margin: auto;
@@ -480,14 +507,6 @@ a:hover  {
 	width: calc(9vw + 7.5vh);
 	height: calc(24vw + 20vh);
 	clip: rect(0, auto, auto, 0);
-}
-#revolvermapiframe {
-	position: fixed;
-	width: calc(6vw + 5vh);
-	height: calc(6vw + 5vh);
-	left: calc(6vw + 7vh);
-	bottom: calc(1vh + .09vw);
-	overflow: hidden !important;
 }
 #footer {
 	table-layout: fixed;
