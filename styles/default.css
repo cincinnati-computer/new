@@ -461,8 +461,8 @@ a:hover  {
 #revolvermapscontainer {
 	display: inline-block;
 	position: relative;
-	width: 13vh;
-	height: 13vh
+	width: 20vh;
+	height: 20vh;
 	overflow: hidden;
 }
 #revolvermapsdummy {
@@ -476,7 +476,11 @@ a:hover  {
 #revolvermapsiframe {
 	width: 200%;
 	height: 200%;
-	transform: scale(2);
+	transform: scale(.5);
+	marign-top: -50%;
+	marign-left: -50%;
+	margin-bottom: 0;
+	margin-right: 0;
 }
 #footerdirections {
 	text-align: center;
